@@ -1,0 +1,32 @@
+version: "3.5"
+services:
+  database:
+    image: mongo:latest
+    container_name: strapi-mongo
+    restart: always
+    volumes:
+      - ./docker/mongodb/data/db:/data/db:delegated
+    environment:
+      MONGO_INITDB_ROOT_DATABASE: admin
+    ports:
+      - 27017:27017
+    networks:
+      - mongo-network
+
+  mongo-express:
+    image: mongo-express
+    environment:
+        - ME_CONFIG_MONGODB_SERVER=database
+        - ME_CONFIG_MONGODB_PORT=27017
+        - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+        - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+    depends_on:
+        - database
+    ports:
+      - 8081:8081
+    networks:
+      - mongo-network
+
+networks:
+  mongo-network:
+    external: true

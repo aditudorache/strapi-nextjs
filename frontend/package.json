@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@apollo/client": "^3.3.11",
+    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/react-ssr": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.5.0",
+    "next": "^10.0.7",
+    "next-apollo": "^5.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "reactstrap": "^8.9.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
