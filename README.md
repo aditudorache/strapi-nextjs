@@ -1,7 +1,7 @@
 # strapi-nextjs
-order application build using strapi for backend and nextjs for frontend
+Order application build using strapi for backend and nextjs for frontend
 
-Technology stack
+## Technology stack
 - React
 - GraphQL
 - Headless CMS
