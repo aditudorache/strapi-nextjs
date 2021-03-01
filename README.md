@@ -7,3 +7,6 @@ Order application build using strapi for backend and nextjs for frontend
 - Headless CMS
 - Docker/Docker-compose
 - Mongodb
+
+## Resources
+https://strapi.io/blog/nextjs-react-hooks-strapi-food-app-1
